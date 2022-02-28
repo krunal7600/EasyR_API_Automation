@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EasyR_Automation_Suites">
+
+    <test name="Login_Customer_Partner_Employee_APIs">
+        <classes>
+            <class name="All_API_List.TC001_POST_Login_Customer_Success"></class>
+            <class name="All_API_List.TC002_POST_Login_Partner_Success"></class>
+            <class name="All_API_List.TC003_POST_Login_Employee_Success"></class>
+        </classes>
+    </test>
+
+    <test name="Simple_Order_Place_CustomerSide_Flow_APIs">
+        <classes>
+            <class name="All_API_List.TC004_GET_Metadata"></class>
+            <class name="All_API_List.TC009_GET_NotificationCount"></class>
+            <class name="Event_API_List.TC005_POST_ListHomeDetailsForEventOrder"></class>
+            <class name="All_API_List.TC011_POST_AvailableProviders"></class>
+            <class name="Event_API_List.TC004_POST_GetHomeDetailsForEventOrder"></class>
+            <class name="All_API_List.TC012_GET_HomeDetailsKeys"></class>
+            <class name="All_API_List.TC013_POST_ServiceRequest"></class>
+            <class name="All_API_List.TC014_POST_ChecklistAddonList"></class>
+            <class name="All_API_List.TC018_POST_ChecklistSubmit"></class>
+        </classes>
+    </test>
+
+    <test name="Simple_Order_Accept_PartnerSide_Flow_APIs">
+        <classes>
+            <class name="All_API_List.TC004_GET_Metadata"></class>
+            <class name="All_API_List.TC022_POST_OrderList_PartnerSide"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_PartnerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="Custom_Addon.TC004_POST_GetCustomAddonDetails_ManagerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+            <class name="All_API_List.TC027_POST_ProviderAcceptOrder"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+        </classes>
+    </test>
+
+    <test name="Simple_Order_Payment_CustomerSide_Flow_APIs">
+        <classes>
+            <class name="All_API_List.TC009_GET_NotificationCount"></class>
+            <class name="All_API_List.TC022_POST_OrderList_CustomerSide"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_CustomerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_CustomerSide"></class>
+            <class name="All_API_List.TC026_POST_ProvidersListAcceptedOrder"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_CustomerSide"></class>
+            <class name="All_API_List.TC052_POST_GeneratePaymentLink"></class>
+        </classes>
+    </test>
+
+    <test name="Assign_Employee_CustomerSide_Flow_APIs">
+        <classes>
+            <class name="All_API_List.TC029_POST_AssignOrder"></class>
+        </classes>
+    </test>
+
+    <test name="Add_Extra_Services_Addon_CustomerSide_Flow_APIs">
+        <classes>
+            <class name="All_API_List.TC023_POST_OrderDetails_CustomerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_CustomerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_CustomerSide"></class>
+            <class name="All_API_List.TC056_POST_GetHomeDetails"></class>
+            <class name="All_API_List.TC014_POST_ChecklistAddonList"></class>
+            <class name="All_API_List.TC032_POST_NewAddonRequest"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_CustomerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_CustomerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_CustomerSide"></class>
+        </classes>
+    </test>
+
+    <test name="Accept_Add_Extra_Services_Addon_PartnerSide_Flow_APIs">
+        <classes>
+            <class name="All_API_List.TC022_POST_OrderList_PartnerSide"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_PartnerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+            <class name="All_API_List.TC057_POST_ListEmployeeNames"></class>
+<!--            <class name="All_API_List.TC058_POST_AssignOrderToEmployee"></class>-->
+            <class name="All_API_List.TC023_POST_OrderDetails_CustomerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_CustomerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_CustomerSide"></class>
+            <class name="All_API_List.TC033_POST_NewAddonRequestView"></class>
+            <class name="All_API_List.TC034_POST_NewAddonRequestAccept"></class>
+            <class name="All_API_List.TC033_POST_NewAddonRequestView"></class>
+        </classes>
+    </test>
+
+    <test name="Add_Extra_Services(Addon)_Payment_Flow_With_Card_Detail_Page">
+        <classes>
+            <class name="All_API_List.TC009_GET_NotificationCount"></class>
+            <class name="All_API_List.TC022_POST_OrderList_CustomerSide"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_CustomerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_CustomerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_CustomerSide"></class>
+            <class name="All_API_List.TC033_POST_NewAddonRequestView"></class>
+            <class name="All_API_List.TC053_POST_GenerateAddonPaymentLink"></class>
+            <class name="All_API_List.TC036_POST_NewAddonRequestPayment"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_CustomerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_CustomerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_CustomerSide"></class>
+        </classes>
+    </test>
+
+    <test name="Check_In_Start_MarkChecklist_Finished_Flow">
+        <classes>
+            <class name="All_API_List.TC022_POST_OrderList_PartnerSide"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_PartnerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+            <class name="All_API_List.TC037_POST_ChangeOrderStatus_CHECKIN"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_PartnerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+            <class name="All_API_List.TC037_POST_ChangeOrderStatus_START"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_PartnerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+            <class name="All_API_List.TC038_POST_MarkChecklistAddonsCompleted"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+            <class name="All_API_List.TC055_POST_EmpORManagerOutOfRange"></class>
+            <class name="All_API_List.TC037_POST_ChangeOrderStatus_FINISHED"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_PartnerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+        </classes>
+    </test>
+
+    <test name="Custom_Room_Flow">
+        <classes>
+            <class name="Custom_Room.TC004_GET_StandardChecklist"></class>
+            <class name="Custom_Room.TC005_POST_StandardAddonList"></class>
+            <class name="Custom_Room.TC006_POST_AddCustomRoom"></class>
+            <class name="Custom_Room.TC009_POST_GetRoomDetails"></class>
+            <class name="Custom_Room.TC005_POST_StandardAddonList"></class>
+            <class name="Custom_Room.TC004_GET_StandardChecklist"></class>
+            <class name="Custom_Room.TC007_POST_EditCustomRoom"></class>
+            <class name="Custom_Room.TC008_POST_DeleteCustomRoom"></class>
+        </classes>
+    </test>
+
+    <test name="Add_Custom_Addon_And_Delete_Flow">
+        <classes>
+            <class name="Custom_Addon.TC001_POST_AddCustomAddon"></class>
+            <class name="Custom_Addon.TC002_POST_DeleteCustomAddon_BeforeSubmitChecklistAddon"></class>
+        </classes>
+    </test>
+
+    <test name="Custom_Addon_Add_And_Submit_Price_And_Accept_Order_Flow">
+        <classes>
+            <class name="Event_API_List.TC005_POST_ListHomeDetailsForEventOrder"></class>
+            <class name="Event_API_List.TC007_POST_AvailableProvider"></class>
+            <class name="Event_API_List.TC004_POST_GetHomeDetailsForEventOrder"></class>
+            <class name="All_API_List.TC012_GET_HomeDetailsKeys"></class>
+            <class name="All_API_List.TC013_POST_ServiceRequest"></class>
+            <class name="All_API_List.TC014_POST_ChecklistAddonList"></class>
+            <class name="Event_API_List.TC005_POST_ListHomeDetailsForEventOrder"></class>
+            <class name="Event_API_List.TC004_POST_GetHomeDetailsForEventOrder"></class>
+            <class name="All_API_List.TC012_GET_HomeDetailsKeys"></class>
+            <class name="Custom_Addon.TC001_POST_AddCustomAddon"></class>
+            <class name="All_API_List.TC012_GET_HomeDetailsKeys"></class>
+            <class name="Custom_Addon.TC003_POST_ChecklistAddonSubmit_SendCustomAddonRequest"></class>
+            <class name="Custom_Addon.TC013_POST_CustomOrderList_PartnerSide"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_PartnerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_PartnerSide"></class>
+            <class name="Custom_Addon.TC004_POST_GetCustomAddonDetails_ManagerSide"></class>
+            <class name="All_API_List.TC024_POST_JobDetails_PartnerSide"></class>
+            <class name="Custom_Addon.TC007_POST_SubmitPrice"></class>
+            <class name="All_API_List.TC027_POST_ProviderAcceptOrder"></class>
+            <class name="Custom_Addon.TC004_POST_GetCustomAddonDetails_ManagerSide"></class>
+            <class name="Custom_Addon.TC014_POST_CustomOrderList_CustomerSide"></class>
+            <class name="All_API_List.TC023_POST_OrderDetails_CustomerSide"></class>
+            <class name="All_API_List.TC025_POST_OrderHistory_CustomerSide"></class>
+<!--            <class name="Custom_Addon.TC009_POST_ProvidersListAcceptedOrder"></class>-->
+<!--            <class name="All_API_List.TC052_POST_GeneratePaymentLink"></class>-->
+<!--            <class name="Custom_Addon.TC011_POST_AcceptCustomAddon_ByUser"></class>-->
+            <class name="All_API_List.TC037_POST_ChangeOrderStatus_CustomAddon_CANCEL"></class>
+        </classes>
+    </test>
+
+</suite>

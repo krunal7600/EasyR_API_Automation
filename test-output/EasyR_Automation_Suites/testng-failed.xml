@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EasyR_Automation_Suites]">
+  <test thread-count="5" name="Simple_Order_Payment_CustomerSide_Flow_APIs(failed)">
+    <classes>
+      <class name="All_API_List.TC052_POST_GeneratePaymentLink">
+        <methods>
+          <include name="POSTGeneratePaymentLink"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- All_API_List.TC052_POST_GeneratePaymentLink -->
+    </classes>
+  </test> <!-- Simple_Order_Payment_CustomerSide_Flow_APIs(failed) -->
+</suite> <!-- Failed suite [EasyR_Automation_Suites] -->
